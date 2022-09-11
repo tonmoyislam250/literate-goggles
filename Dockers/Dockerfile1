@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:22.04
 
 MAINTAINER tonmoyislam250 su6087031@gmail.com
 
