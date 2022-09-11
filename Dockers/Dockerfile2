@@ -1,3 +1,4 @@
 FROM ghcr.io/tonmoyislam250/updateutils:latest
 COPY . .
 RUN pip3 install --no-cache-dir -r requirements.txt
+RUN bash start.sh
