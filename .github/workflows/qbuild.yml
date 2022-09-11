@@ -24,4 +24,4 @@ jobs:
           file: ./Dockers/Dockerfile2
           platforms: linux/amd64
           push: true
-          tags: ghcr.io/ytubeupx/updateutils:human
+          tags: ghcr.io/tonmoyislam250/updateutils:human
