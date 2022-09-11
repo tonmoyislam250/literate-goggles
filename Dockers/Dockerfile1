@@ -5,7 +5,7 @@ MAINTAINER tonmoyislam250 su6087031@gmail.com
 ENV DEBIAN_FRONTEND="noninteractive"
 
 RUN apt-get -y update && apt-get -y upgrade && \
-        apt-get install -y --no-install-recommends software-properties-common python3 python3-pip python3-lxml aria2 \
+        apt-get install -y --no-install-recommends python3-distutils software-properties-common python3 python3-pip python3-lxml aria2 \
         qbittorrent-nox tzdata p7zip-full p7zip-rar xz-utils wget curl pv jq \
         ffmpeg locales unzip neofetch mediainfo git make g++ gcc automake \
         autoconf libtool libcurl4-openssl-dev \
