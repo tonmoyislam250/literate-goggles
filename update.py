@@ -1,8 +1,9 @@
+import os
 from subprocess import run as srun
 
 UPSTREAM_REPO="https://github.com/tonmoyislam250/literate-goggles"
 UPSTREAM_BRANCH="pulled"
-if ospath.exists('.git'):
+if os.path.exists('.git'):
     srun(["rm", "-rf", ".git"])
 
 srun([f"git init -q \
