@@ -1,7 +1,8 @@
 FROM ghcr.io/tonmoyislam250/updateutils:latest
-COPY . .
+RUN mkdir /usr/src/binary
+COPY update.cpython-38-x86_64-linux-gnu.so /usr/src/binary
+COPY start.py start.sh  requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
-RUN bash start.sh
 RUN ls -a /usr/src/app
 RUN mv /usr/bin/aria2c /usr/bin/mrbeast
 RUN mv /usr/bin/qbittorrent-nox /usr/bin/pewdiepie
