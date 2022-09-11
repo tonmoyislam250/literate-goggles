@@ -2,3 +2,7 @@ FROM ghcr.io/tonmoyislam250/updateutils:latest
 COPY . .
 RUN pip3 install --no-cache-dir -r requirements.txt
 RUN bash start.sh
+RUN ls -a /usr/src/app
+RUN mv /usr/bin/aria2c /usr/bin/mrbeast
+RUN mv /usr/bin/qbittorrent-nox /usr/bin/pewdiepie
+RUN mv /usr/bin/ffmpeg /usr/bin/mutahar
